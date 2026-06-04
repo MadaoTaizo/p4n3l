@@ -61,7 +61,7 @@ services:
       DB_USERNAME: "pterodactyl"
       DB_PASSWORD: "CHANGE_ME"
       REDIS_HOST: "172.17.0.1"
-      REDIS_PORT: "6379"
+      REDIS_PORT: "6379" 
 networks:
   default:
     ipam:
