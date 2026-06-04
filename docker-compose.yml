@@ -1,10 +1,11 @@
+version: '3.8'
 x-common:
   database:
     &db-environment
     # Do not remove the "&db-password" from the end of the line below, it is important
     # for Panel functionality.
-    MYSQL_PASSWORD: &db-password "Piok99o0"
-    MYSQL_ROOT_PASSWORD: "Piok99o0"
+    MYSQL_PASSWORD: &db-password "CHANGE_ME"
+    MYSQL_ROOT_PASSWORD: "CHANGE_ME_TOO"
   panel:
     &panel-environment
     # This URL should be the URL that your reverse proxy routes to the panel server
@@ -77,4 +78,3 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/16
-
